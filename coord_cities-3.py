@@ -12,13 +12,14 @@ def get_coordinates(city, key):
             lng = round(results[0]['geometry']['lng'], 2)
             country = results[0]['components'].get('country', 'Страна не определена')
             region = results[0]['components'].get('state', 'Регион не определен')
+            currency = results[0]['annotations'].get('currency')
 
             # Получаем URL для OpenStreetMap
             osm_url = f"https://www.openstreetmap.org/?mlat={lat}&mlon={lng}"
 
             return {
-                "coordinates": f"Широта: {lat}, Долгота: {lng}\nСтрана: {country}\nРегион: {region}",
-                "map_url": osm_url
+                "coordinates": f"Широта: {lat}, Долгота: {lng}\nСтрана: {country}\nРегион: {region}\n"
+                               f"Денежная единица: {currency['iso_code']}", "map_url": osm_url
             }
         else:
             return {"coordinates": "Город не найден", "map_url": None}
@@ -37,10 +38,15 @@ def show_map():
     if map_url:
         webbrowser.open(map_url)
 
+
+def clear_field():
+    entry.delete(0, END)
+    label.config(text="")
+
 # Интерфейс
 window = Tk()
 window.title("Поиск координат города")
-window.geometry('300x200+500+150')
+window.geometry('300x230+500+150')
 
 #key = '97c595bec990457d975c12c16a4ec4a7'
 key = '05db6601914844ff8561da7f3f07c6ab'
@@ -48,17 +54,20 @@ map_url = None
 
 # Элементы интерфейса
 entry = Entry()
-entry.pack()
+entry.pack(padx=10,pady=10)
 entry.bind("<Return>", show_coordinates)
 
 button = Button(text="Поиск", command=show_coordinates)
 button.pack()
 
 label = Label(text="Введите город и нажмите Поиск")
-label.pack()
+label.pack(padx=10,pady=10)
 
 map_button = Button(text="Показать карту", command=show_map)
 map_button.pack()
+
+clear_button = Button(text="Очистить поиск", command=clear_field)
+clear_button.pack(padx=10,pady=10)
 
 # Запуск приложения
 window.mainloop()
