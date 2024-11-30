@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05b029a9-5376-40bc-bea7-fc4282de31cb" name="Changes" comment="Проект coord_cities">
-      <change afterPath="$PROJECT_DIR$/coord_interface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coord_cities-3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/coord_cities.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/coord_cities.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,16 +25,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Avir5"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Avir5&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Avir5/coord_cities.git",
-    "accountId": "53c10801-e45c-4b8f-856f-b3d9dcd16f9a"
+    "accountId": "a3d36e60-be0d-4587-a64a-41adadc6831c"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -46,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.coord_cities-3.executor": "Run",
     "Python.coord_interface.executor": "Run",
     "Python.coordinates.executor": "Run",
     "Python.coordinates_web.executor": "Run",
@@ -57,7 +60,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+        <option value="bundled-python-sdk-6a3326d57233-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.24807.21" />
       </set>
     </attachedChunks>
   </component>
